@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+        android:id="@+id/tvmostrar"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@id/tvmostrar"
+        android:textColor="#4a148c"
+        android:id="@+id/tvsuma"
+        android:layout_centerHorizontal="true"
+        android:textSize="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rol"
+        android:layout_below="@+id/tvsuma"
+        android:textColor="#00bcd4"
+        android:id="@+id/tvrol"
+        android:layout_centerHorizontal="true"
+        android:textSize="70dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Reiniciar"
+        android:id="@+id/reiniciar"
+        android:background="#b71c1c"
+        android:textColor="#ffffff"
+        android:layout_below="@id/tvrol"/>
+
+    <RelativeLayout
+        android:id="@+id/relativo"
+        android:layout_below="@id/reiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/btn1"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btn1"
+            android:id="@+id/btn2"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btn2"
+            android:id="@+id/btn3"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btn3"
+            android:id="@+id/btn4"/>
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_toRightOf="@id/btn4"
+            android:id="@+id/btn5"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
